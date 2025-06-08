@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Acres</title>
+    <link rel="stylesheet" href="ai.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <script src="ai.js"></script>
+</head>
+
+<body>
+    <div class="row">
+        <div class="column" style="background-color:rgb(14, 47, 21);">
+            <h2>Weather</h2>
+            <p>Locate the weather phenomena in your area that could affect your crops.</p>
+            <div>
+                <h1>The weather statistics for your area:</h1>
+                <ul>
+                    <li id="temp"></li>
+                    <li id="humid"></li>
+                    <li id="rain"></li>
+                </ul>
+            </div>
+        </div>
+        <div class="column" style="background-color:rgb(23,72,22);">
+            <h2>Soil Quality</h2>
+            <p>Discover how much nutrition is and which plants can thrive in your soil.</p>
+            <table>
+                <tr>
+                    <th>Soil pH</th>
+                    <th>Soil Nitrogen</th>
+                    <th>Soil Phosphorus</th>
+                    <th>Soil Potassium</th>
+                </tr>
+                <tr>
+                    <td>5.5</td>
+                    <td>5%</td>
+                    <td>0.045%</td>
+                    <td>2.5%</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column" style="background-color:rgb(79, 117, 46);">
+            <h2>USDA Pricings</h2>
+            <p>Find out the current market prices of crops in your area.</p>
+                <h1>The current market prices for your area:</h1>
+                <ul>
+                    <li>Corn: $4.48 per bushel</li>
+                    <li>Soybean: $10.66 per bushel</li>
+                    <li>Cotton: $0.66 per lb</li>
+                </ul>
+        </div>
+        <div class="column" id="ai" style="background-color:rgb(84,124,69);">
+            <h2>Get AI-enhanced Response</h2>
+            <p>With the power of machine learning, see what crops will be the most profitable.</p>
+            <div class="hidden-text" style="display: none;">
+                <h1 id="crop1"></h1>
+                <ul>
+                    <li id="desc"></li>
+                </ul>
+                <ul>
+                    <li id="how"></li>
+                    <li id="how2"></li>
+                </ul>
+                <ul>
+                    <li id="prac"></li>
+                    <li id="prac2"></li>
+                    <li id="prac3"></li>
+                </ul>
+                <p id="crop2"></p>
+                <p id="crop3"></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

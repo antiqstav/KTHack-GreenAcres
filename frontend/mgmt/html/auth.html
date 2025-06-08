@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Console</title>
+    <link rel="stylesheet" href="../console.css">
+    <script type="module" src="../js/auth.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <div class="sidenav">
+        <img id="logo" src="../../../backend/logo.png" alt="Green Acres!" width="220" height="123.75">
+        <a href="auth.html">Dashboard</a>
+        <a href="ai.html">AI CropCompass</a>
+        <a href="aboutus.html">About us</a>
+    </div>
+
+    <div class="row">
+        <div class="column left" style="background-color:rgb(23,72,22);">
+          <h2 style="background-color: rgb(23,72,22);">Log in</h2>
+          <form id="login">
+            <input type="text" name="username" placeholder="Username" required><br>
+            <input type="password" name="password" placeholder="Password" required><br>
+            <input type="submit" value="Log in">
+          </form>
+        </div>
+        <div class="column right" style="background-color:rgb(84,124,69);">
+          <h2 style="background-color: rgb(84,124,69);">Register below</h2>
+          <form id="register">
+            <input type="text" name="username" placeholder="Username" required><br>
+            <input type="password" name="password" placeholder="Password" required><br>
+            <input type="submit" value="Sign up">
+          </form>
+        </div>
+      </div>
+</body>
+</html>

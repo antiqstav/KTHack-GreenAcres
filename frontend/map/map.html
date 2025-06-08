@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Acres</title>
+    <link rel="stylesheet" href="map.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+</head>
+<body>
+    <div>
+        <!-- 1920:1080 ratio for the logo -->
+        <img id="logo" src="../../backend/cropcompass.png" alt="Green Acres!" width="220" height="103.15">
+        <p>Click on your location on the map to get its coordinates, or input your latitude and longitude below.</p>
+    </div>
+    <div id="map-container">
+        <div id="map" style="width: 750px; height: 450px"></div>
+        <script src="map.js"></script>
+    </div>
+    <br><br>
+    <div id="coord">
+        <input type="text" id="coords" placeholder="Enter your coordinates in x,y...">
+        <button class="button" id="saveCoords">Save coordinates</button>
+        <p id="saved" class="hidden-text"></p> <br>
+        <a href="../response/ai.html">
+            <button class="button">Send coordinates!</button>
+        </a>
+    </div>
+</body>
+</html>

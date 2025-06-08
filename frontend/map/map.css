@@ -1,0 +1,75 @@
+button {
+    background-color: #0c3501;
+    border: rgb(84,124,69) 2px solid;
+    color: beige;
+    padding: 14px 10px;
+    margin: 8px ;
+    border: none;
+    cursor: pointer;
+    width: 80%;
+    height: 30%;
+    transition-duration: 0.2s;
+}
+
+button:hover {
+    background-color: rgb(255,255,255);
+    color: rgb(84,124,69);
+    border: black 2px solid;
+}
+body {
+    background-color: #4f752e;
+}
+h1, p {
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #0c3501;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+#coord {
+    text-align: center;
+}
+#coords {
+    text-align: center;
+    width: 200px;
+}
+::placeholder {
+    text-align: center;
+}
+#map {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#saveCoords {
+    background-color: #0c3501;
+    padding: 7px;
+    margin: 8px;
+    border: none;
+    cursor: pointer;
+    width: 20%;
+    transition-duration: 0.2s;
+}
+
+#saveCoords:hover {
+    background-color: rgb(255,255,255);
+    color: rgb(84,124,69);
+    border: black 2px solid;
+}
+
+* {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1 {
+    font-family: "American Typewriter", "serif";
+    font-size: 50px;
+    color: white;
+}
+
+#logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

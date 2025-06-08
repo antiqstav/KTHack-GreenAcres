@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Console</title>
+    <link rel="stylesheet" href="../console.css">
+    <link rel="icon" type="image/x-icon" href="../../backend/favicon.ico">
+    <script type="module" src="../js/console.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="sidenav">
+        <img id="logo" src="../../../backend/logo.png" alt="Green Acres!" width="220" height="123.75">
+        <a href="auth.html">Dashboard</a>
+        <a href="ai.html">AI CropCompass</a>
+        <a href="aboutus.html">About us</a>
+    </div>
+
+    <div>
+        <button id="newCrop">Add new crop entry <span>&plus;</span></button>
+        <button id="export">Export crops</button>
+        <button id="logout">Log out</button>
+    </div>
+
+    <div id="newCropForm">
+        <form id="formyformform">
+            <button id="close"><span>&times;</span></button>
+
+            <label>Entry name:</label>
+            <input type="text" id="entryName" name="entryName" required>
+
+            <label>Crop Name:</label>
+            <input type="text" id="cropName" name="cropName" required>
+
+            <label>Acres planted:</label>
+            <input type="number" id="acres" name="acres" required>
+
+            <label>Centroid of geolocation: </label>
+            <input id="geoloc" name="geoloc" required>
+
+            <label>Rainfall:</label>
+            <input type="number" id="rainfall" name="rainfall" required>
+
+            <button id="submit">Submit</button>
+        </form>
+    </div>
+
+    <div id="crops"></div>
+    <div id="noCrops">
+        <h2>No crops found</h2>
+    </div>
+    <div id="noCropsDown">
+        <p>Click the button above to add a new crop entry.</p>
+    </div>
+
+    <div id="cropDetails">
+        <button id="closeDetails"><span>&times;</span></button>
+        <h1>Crop Details</h2>
+        <div id="details">
+            <p id="pCrop">Crop Name: </p>
+            <p id="pAcres">Acres planted (hA): </p>
+            <p id="pGeoloc">Coordinates (latitude, longitude): </p>
+            <p id="pRain">Rainfall in the area of the crop: </p>
+        </div>
+    </div>
+    <div id="overlay"></div>
+
+</body>
+</html>
